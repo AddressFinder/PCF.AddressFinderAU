@@ -72,12 +72,12 @@ Update the version in the widget configuration file `index.ts`
 In the root folder
 
 `npm install`
-`npm build`
+`npm run build`
 
-Build a new release - replacing the version number in the file appropriately (this will build and package a release)
+## Build a Release Package
 
-`msbuild Solution\AddressFinderControlAU\AddressFinderControlAU.cdsproj /t:build /restore /p:configuration=Release`
+Run the build script:
 
-Copy the release binary into the Release folder:
+`.\build-release.ps1`
 
-`cp .\Solution\AddressFinderControlAU\bin\Release\AddressFinderControlAU.zip .\Release\.`
+This will build the PCF control, package the solution, and copy the release zip to the `Release` folder.
