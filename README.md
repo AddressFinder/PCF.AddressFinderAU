@@ -4,13 +4,13 @@ A PowerApps Component Framework (PCF) control that provides intelligent address 
 
 ## Features
 
-- 🔍 **Real-time address search** - Autocomplete addresses as users type
-- 🌏 **Dual country support** - Search Australian and New Zealand addresses
-- 📍 **Precise geocoding** - Returns GPS coordinates with each address
-- 🎯 **Smart field mapping** - Automatically populates multiple form fields from a single search
-- 🔧 **Flexible filtering** - Filter by state codes (AU) or region codes (NZ)
-- ⚙️ **Configurable data sources** - Choose between GNAF, PAF, or combined sources (AU only)
-- 🔄 **Dynamic country switching** - Bind to form fields to switch between AU/NZ databases
+- **Real-time address search** - Autocomplete addresses as users type
+- **Dual country support** - Search Australian and New Zealand addresses
+- **Precise geocoding** - Returns GPS coordinates with each address
+- **Smart field mapping** - Automatically populates multiple form fields from a single search
+- **Flexible filtering** - Filter by state codes (AU) or region codes (NZ)
+- **Configurable data sources** - Choose between GNAF, PAF, or combined sources (AU only)
+- **Dynamic country switching** - Bind to form fields to switch between AU/NZ databases
 
 ## What It Does
 
