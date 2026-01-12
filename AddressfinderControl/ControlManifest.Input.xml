@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="Andz" constructor="AddressFinderAU" version="1.2.0" display-name-key="AddressFinderAU" description-key="AddressFinder AU Data" control-type="standard">
+  <control namespace="Addressfinder" constructor="AddressfinderControl" version="1.4.0" display-name-key="AddressfinderControl" description-key="Addressfinder AU/NZ Address Lookup" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="address_fullname" display-name-key="address_fullname" description-key="address_fullname" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="address_line_1" display-name-key="address_line_1" description-key="address_line_1" of-type="SingleLine.Text" usage="bound" required="true" />
@@ -9,9 +9,14 @@
     <property name="suburb" display-name-key="suburb" description-key="suburb" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="postcode" display-name-key="postcode" description-key="postcode" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="country" display-name-key="country" description-key="country" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="latitude" display-name-key="Latitude" description-key="GPS Latitude coordinate from address lookup" of-type="SingleLine.Text" usage="bound" required="false" />
+    <property name="longitude" display-name-key="Longitude" description-key="GPS Longitude coordinate from address lookup" of-type="SingleLine.Text" usage="bound" required="false" />
     <property name="afKey" display-name-key="Address Finder Key" description-key="Address Finder Key" of-type="SingleLine.Text" usage="input" required="true" />
-    <property name="state_codes" display-name-key="State Codes" description-key="State codes to filter addresses (e.g. VIC, NSW, QLD). Leave empty for no filter." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="selectedCountry" display-name-key="Selected Country (Optional)" description-key="Bind to a Choice/OptionSet field for dynamic country selection. Leave unbound to use Default Country." of-type="OptionSet" usage="bound" required="false" />
+    <property name="defaultCountry" display-name-key="Default Country" description-key="Default country when Selected Country is not bound or empty (AU or NZ). Default: AU" of-type="SingleLine.Text" usage="input" required="false" default-value="AU" />
+    <property name="state_codes" display-name-key="State Codes" description-key="State codes to filter addresses (e.g. VIC, NSW, QLD). Leave empty for no filter." of-type="SingleLine.Text" usage="input" required="false" default-value="" />
     <property name="source" display-name-key="Address Source" description-key="Address source to search (default: gnaf, or gnaf,paf to include PAF)" of-type="SingleLine.Text" usage="input" required="false" default-value="gnaf" />
+    <property name="region_code" display-name-key="Region Code" description-key="Region codes to filter NZ addresses (e.g. AUK, WGN, CAN). Leave empty for no filter." of-type="SingleLine.Text" usage="input" required="false" default-value="" />
     <!--
       Property node's of-type attribute can be of-type-group attribute.
       Example:
@@ -26,8 +31,8 @@
     <resources>
       <code path="index.ts" order="1"/>
       <!-- UNCOMMENT TO ADD MORE RESOURCES
-      <css path="css/AddressFinderAU.css" order="1" />
-      <resx path="strings/AddressFinderAU.1033.resx" version="1.0.0" />
+      <css path="css/AddressfinderControl.css" order="1" />
+      <resx path="strings/AddressfinderControl.1033.resx" version="1.0.0" />
       -->
     </resources>
     <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
