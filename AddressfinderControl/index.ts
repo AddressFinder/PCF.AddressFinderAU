@@ -246,7 +246,7 @@ export class AddressfinderControl
           gps: "1",
         },
         max_results: 8,
-        ca: "MD365/1.4.0",
+        ca: "MD365/1.5.0",
       },
     );
     this.widget.on("result:select", (fullAddress: any, metaData: any) => {
