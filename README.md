@@ -143,6 +143,14 @@ npm install
 npm run build
 ```
 
+### Running in Development
+
+You can start a local server serving the form:
+
+```powershell
+npm run start
+```
+
 ### Build a Release Package
 
 Run the build script:
