@@ -28,6 +28,7 @@ This control replaces standard address input fields with an intelligent autocomp
 ## Prerequisites
 
 - An [Addressfinder API key](https://addressfinder.com.au/plans/) (supports both AU and NZ with a single key)
+- Log into the addressfinder portal and Allow list (add a host) entry for the URL that will be running your website eg orge1234.crm6.dynamics.com
 - Dynamics 365 or Power Apps environment
 - Form fields to bind for address output
 
